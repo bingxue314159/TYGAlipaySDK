@@ -21,9 +21,9 @@ Pod::Spec.new do |s|
   s.public_header_files = "**/*.h"
   s.resource = "**/*.bundle"
   s.vendored_frameworks = '**/*.{framework}'
-  s.vendored_libraries = '**/AliSDKDemo/*.{a}'
+  s.vendored_libraries = '**/*.{a}'
   s.frameworks = "CoreTelephony", "SystemConfiguration", "QuartzCore", "CoreText", "CFNetwork", "CoreMotion"
-  s.libraries = "libc++", "libz"
+  #s.libraries = "libc++", "libz"
   s.requires_arc = true
 
 end
