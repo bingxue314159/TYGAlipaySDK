@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.summary      = "iOS AlipaySDK"
 
   s.homepage     = "https://b.alipay.com/newIndex.htm"
-
+#  s.license     = { :type => "MIT", :file => "LICENSE" }
   s.license      = { :type => "Copyright", :text => "支付宝(中国)网络技术有限公司 版权所有." }
   s.author       = { "AliPay" => "https://www.alipay.com/"  }
   s.platform     = :ios, "7.0"
@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
   s.resource = "**/*.bundle"
   s.vendored_frameworks = '**/*.{framework}'
   s.vendored_libraries = '**/*.{a}'
-  s.frameworks = "CoreTelephony", "SystemConfiguration", "QuartzCore", "CoreText", "CFNetwork", "CoreMotion"
-  #s.libraries = "libc++", "libz"
+  s.frameworks = "CoreTelephony", "SystemConfiguration" #, "QuartzCore", "CoreText", "CFNetwork", "CoreMotion"
+#  s.libraries = "libc++", "libz"
   s.requires_arc = true
 
 end
